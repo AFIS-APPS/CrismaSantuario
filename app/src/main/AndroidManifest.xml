@@ -21,7 +21,8 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
         </activity>
-        <activity android:name=".Cadastro.CadastroCatequistaActivity"/>
+        <activity android:name=".Cadastro.CadastroCatequistaActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
     </application>
 
 </manifest>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Cadastro.CadBasicoFragment"
+    android:id="@+id/fragCadastroBasico">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/nomeCatequista"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="@dimen/campos_tela_cadastro"
+            android:layout_marginStart="@dimen/campos_tela_cadastro"
+            android:layout_marginTop="@dimen/campos_tela_cadastro"
+            android:ems="10"
+            android:hint="Nome Completo"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/enderecoCatequista"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/campos_tela_cadastro"
+            android:layout_marginStart="@dimen/campos_tela_cadastro"
+            android:layout_marginTop="@dimen/campos_tela_cadastro"
+            android:ems="10"
+            android:hint="Endereço"
+            android:inputType="textPostalAddress"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nomeCatequista" />
+
+        <EditText
+            android:id="@+id/cepCatequista"
+            android:layout_width="0dp"
+            android:hint="CEP"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/campos_tela_cadastro"
+            android:layout_marginStart="@dimen/campos_tela_cadastro"
+            android:layout_marginTop="@dimen/campos_tela_cadastro"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enderecoCatequista" />
+
+        <EditText
+            android:id="@+id/telefoneCatequista"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/campos_tela_cadastro"
+            android:layout_marginStart="@dimen/campos_tela_cadastro"
+            android:layout_marginTop="@dimen/campos_tela_cadastro"
+            android:ems="10"
+            android:hint="Telefone p/ Contato"
+            android:inputType="phone"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cepCatequista" />
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>
