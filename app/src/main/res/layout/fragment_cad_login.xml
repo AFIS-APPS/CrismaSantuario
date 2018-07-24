@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Cadastro.CadLoginFragment"
+    android:id="@+id/fragCadastroLogin">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/emailCatequista"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/campos_tela_cadastro"
+            android:layout_marginStart="@dimen/campos_tela_cadastro"
+            android:layout_marginTop="@dimen/campos_tela_cadastro"
+            android:ems="10"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/senhaCatequista"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/campos_tela_cadastro"
+            android:layout_marginStart="@dimen/campos_tela_cadastro"
+            android:layout_marginTop="@dimen/campos_tela_cadastro"
+            android:ems="10"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailCatequista" />
+
+        <EditText
+            android:id="@+id/catequistaConfirmaSenha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/campos_tela_cadastro"
+            android:layout_marginStart="@dimen/campos_tela_cadastro"
+            android:layout_marginTop="@dimen/campos_tela_cadastro"
+            android:ems="10"
+            android:hint="Confirmar Senha"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/senhaCatequista" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</FrameLayout>

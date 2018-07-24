@@ -2,4 +2,7 @@
     <string name="app_name">Crisma Santuario</string>
     <string name="informacoes_de_login">Informações de Login</string>
     <string name="ficha_de_cadastro">Ficha de Cadastro</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
