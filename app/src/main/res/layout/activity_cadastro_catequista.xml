@@ -18,22 +18,22 @@
         app:layout_constraintBottom_toTopOf="@+id/btAvancarCadastro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        app:layout_constraintTop_toBottomOf="@+id/btLogar">
 
 
     </android.support.constraint.ConstraintLayout>
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/btLogar"
         android:layout_width="0dp"
-        android:layout_height="132dp"
+        android:layout_height="150dp"
         android:layout_marginEnd="@dimen/campos_tela_cadastro"
         android:layout_marginStart="@dimen/campos_tela_cadastro"
         android:layout_marginTop="@dimen/campos_tela_cadastro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher" />
+        app:srcCompat="@drawable/iconecadastro" />
 
     <ImageButton
         android:id="@+id/btAvancarCadastro"

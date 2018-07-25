@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Crisma Santuario</string>
+    <string name="place_name">Santuário N. Sra. Aparecida</string>
     <string name="informacoes_de_login">Informações de Login</string>
     <string name="ficha_de_cadastro">Ficha de Cadastro</string>
 

@@ -71,4 +71,15 @@ public class CadastroCatequistaActivity extends AppCompatActivity {
         });
 
     }
+
+    private Boolean validaCadastroLogin(){
+
+        return true;
+    }
+
+    private Boolean validaCadastroBasico(){
+
+
+        return true;
+    }
 }

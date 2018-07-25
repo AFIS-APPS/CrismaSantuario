@@ -13,7 +13,8 @@
         android:theme="@style/AppTheme"
         android:fullBackupContent="true"
         >
-        <activity android:name=".Main.MainActivity"/>
+        <activity android:name=".Main.MainActivity"
+                  android:label="@string/place_name"/>
         <activity android:name=".Main.SplashScreen"
             android:theme="@style/Theme.AppCompat.NoActionBar">
         <intent-filter>
