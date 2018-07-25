@@ -23,7 +23,26 @@ public class MainActivity extends AppCompatActivity {
         btCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, CadastroCatequistaActivity.class));
+                //startActivity(new Intent(MainActivity.this, CadastroCatequistaActivity.class));
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+    LayoutInflater inflater = getActivity().getLayoutInflater();
+
+    //Define a view do Alert Dialog de acordo com o que é retornado pelo método inflate
+    //O método inflate recebe como parametros o layout a ser inflado na view, e null pois o mesmo será inflado dentro de uma Dialog; 
+    builder.setView(inflater.inflate(R.layout.modelo_LoginDialog, null))
+           .setPositiveButton("Entrar", new DialogInterface.OnClickListener() {
+               @Override
+               public void onClick(DialogInterface dialog, int id) {
+                   
+               }
+           })
+           .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+               public void onClick(DialogInterface dialog, int id) {
+                   dialog.dismiss();
+               }
+           });
+     builder.create();
+     builder.show();
             }
         });
     }
