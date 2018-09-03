@@ -39,21 +39,30 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                 LayoutInflater inflater = MainActivity.this.getLayoutInflater();
+                View mView = inflater.inflate(R.layout.modelo_login_dialog, null);
 
                 //Define a view do Alert Dialog de acordo com o que é retornado pelo método inflate
                 //O método inflate recebe como parametros o layout a ser inflado na view, e null pois o mesmo será inflado dentro de uma Dialog;
-                builder.setView(inflater.inflate(R.layout.modelo_login_dialog, null));
-                builder.setPositiveButton("Entrar", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int id) {
-                   
-                            }
-                       });
-                builder.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                dialog.dismiss();
-                            }
-                       });
+                builder.setView(mView);
+                //builder.setPositiveButton("Entrar", new DialogInterface.OnClickListener() {
+                //            @Override
+                //            public void onClick(DialogInterface dialog, int id) {
+                //   
+                //            }
+                //       });
+                //builder.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+                //            public void onClick(DialogInterface dialog, int id) {
+                //                dialog.dismiss();
+                //            }
+                //       });
+                
+//              Captura informações do Dialog
+
+                EditText usuario = mView.findViewById(R.id.usuarioLogin);
+                EditText senha = mView.findViewById(R.id.senhaLogin);
+                Button acessar = mView.findViewById(R.id.btAcessarLogin);
+                
+                                
                 builder.create();
                 builder.show();
             }
@@ -64,21 +73,29 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                 LayoutInflater inflater = MainActivity.this.getLayoutInflater();
+                View mView = inflater.inflate(R.layout.modelo_turmas_dialog, null);
 
                 //Define a view do Alert Dialog de acordo com o que é retornado pelo método inflate
                 //O método inflate recebe como parametros o layout a ser inflado na view, e null pois o mesmo será inflado dentro de uma Dialog;
-                builder.setView(inflater.inflate(R.layout.modelo_turmas_dialog, null));
-                builder.setPositiveButton("Entrar", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int id) {
-
-                            }
-                        });
-                builder.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                dialog.dismiss();
-                            }
-                        });
+                builder.setView(mView);
+                //builder.setPositiveButton("Entrar", new DialogInterface.OnClickListener() {
+                //            @Override
+                //            public void onClick(DialogInterface dialog, int id) {
+                //
+                //            }
+                //        });
+                //builder.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+                //            public void onClick(DialogInterface dialog, int id) {
+                //                dialog.dismiss();
+                //            }
+                //        });
+                                
+//              Captura informações do Dialog
+                
+                EditText codTurma = mView.findViewById(R.id.turmaTurmas);
+                EditText passTurma = mView.findViewById(R.id.codigoTurmas);
+                Button acessar = mView.findViewById(R.id.btAcessarTurmas);
+                
                 builder.create();
                 builder.show();
             }
