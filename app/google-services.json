@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "297481909282",
+    "firebase_url": "https://crisma-santuario.firebaseio.com",
+    "project_id": "crisma-santuario",
+    "storage_bucket": "crisma-santuario.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297481909282:android:ac879f675e242d9c",
+        "android_client_info": {
+          "package_name": "com.apps.afis.crismasantuario"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "297481909282-3bh684m3onj4a8mgoc9i7eikkcv3ihk9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apps.afis.crismasantuario",
+            "certificate_hash": "92adab00c4fe2b90d2d64f8e1e1158f3e20cf6d1"
+          }
+        },
+        {
+          "client_id": "297481909282-43cir547aile446cqkgl27qklqv7espd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-y__-vkFe_hsRE6YHWKB3A5PJUarhVRE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "297481909282-43cir547aile446cqkgl27qklqv7espd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

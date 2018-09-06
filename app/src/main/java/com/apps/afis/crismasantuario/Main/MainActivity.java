@@ -5,12 +5,20 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.apps.afis.crismasantuario.Cadastro.CadastroCatequistaActivity;
 import com.apps.afis.crismasantuario.R;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
 
 import static android.app.PendingIntent.getActivity;
 
@@ -58,10 +66,18 @@ public class MainActivity extends AppCompatActivity {
                 
 //              Captura informações do Dialog
 
-                EditText usuario = mView.findViewById(R.id.usuarioLogin);
-                EditText senha = mView.findViewById(R.id.senhaLogin);
+                final EditText usuario = mView.findViewById(R.id.usuarioLogin);
+                final EditText senha = mView.findViewById(R.id.senhaLogin);
                 Button acessar = mView.findViewById(R.id.btAcessarLogin);
-                
+
+                acessar.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+                        Log.d("Login", "User: "+ usuario.getText()+"  Pass: "+ senha.getText());
+
+                    }
+                });
                                 
                 builder.create();
                 builder.show();
@@ -91,11 +107,20 @@ public class MainActivity extends AppCompatActivity {
                 //        });
                                 
 //              Captura informações do Dialog
-                
-                EditText codTurma = mView.findViewById(R.id.turmaTurmas);
-                EditText passTurma = mView.findViewById(R.id.codigoTurmas);
+
+                final EditText codTurma = mView.findViewById(R.id.turmaTurmas);
+                final EditText passTurma = mView.findViewById(R.id.codigoTurmas);
                 Button acessar = mView.findViewById(R.id.btAcessarTurmas);
-                
+
+                acessar.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+                        Log.d("Login", "Cod. Turma: "+ codTurma.getText()+"  passTurma: "+ passTurma.getText());
+
+                    }
+                });
+
                 builder.create();
                 builder.show();
             }

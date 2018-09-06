@@ -29,4 +29,12 @@
         android:layout_marginBottom="16dp"
         android:fontFamily="sans-serif"
         android:hint="Senha"/>
+    <Button
+        android:id="@+id/btAcessarLogin"
+        style="@style/AppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorAccent"
+        android:text="Acessar" />
 </LinearLayout>
