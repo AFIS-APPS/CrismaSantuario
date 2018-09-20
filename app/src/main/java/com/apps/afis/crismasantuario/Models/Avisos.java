@@ -1,12 +1,23 @@
 package com.apps.afis.crismasantuario.Models;
 
+import java.util.ArrayList;
+
 public class Avisos {
-    public String tituloAviso;
-    public String dataAviso;
-    public String autorAviso;
-    public String corpoAviso;
+    private String tituloAviso;
+    private String dataAviso;
+    private String autorAviso;
+    private String corpoAviso;
+    private ArrayList<String> turmasAviso;
 
     public Avisos() {
+    }
+
+    public ArrayList<String> getTurmasAviso() {
+        return turmasAviso;
+    }
+
+    public void setTurmasAviso(ArrayList<String> turmasAviso) {
+        this.turmasAviso = turmasAviso;
     }
 
     public String getTituloAviso() {

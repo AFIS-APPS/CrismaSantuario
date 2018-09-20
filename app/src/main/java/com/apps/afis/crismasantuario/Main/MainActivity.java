@@ -12,7 +12,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
+import com.apps.afis.crismasantuario.Administrador.GerenciaCrismandosActivity;
+import com.apps.afis.crismasantuario.Administrador.Supervisor.AdicionaTurmasActivity;
+import com.apps.afis.crismasantuario.Administrador.Supervisor.GerenciaTurmasActivity;
 import com.apps.afis.crismasantuario.Cadastro.CadastroCatequistaActivity;
+import com.apps.afis.crismasantuario.Firebase.Querys.QrTurmas;
 import com.apps.afis.crismasantuario.R;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentReference;
@@ -125,5 +129,8 @@ public class MainActivity extends AppCompatActivity {
                 builder.show();
             }
         });
+
+        startActivity(new Intent(this, AdicionaTurmasActivity.class));
+
     }
 }
