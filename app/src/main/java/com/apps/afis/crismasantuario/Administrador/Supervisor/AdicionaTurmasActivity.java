@@ -22,8 +22,13 @@ public class AdicionaTurmasActivity extends AppCompatActivity {
 
         String msg = validarTurma(null, null, null,null,null,null,null);
 
+//        Verificar se o usuário está inserindo ou editando
+
+
         if(msg.equals("")){
-//            insere
+//          insere
+
+
         }else{
             Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
             startActivity(new Intent(this, GerenciaTurmasActivity.class));
@@ -81,7 +86,7 @@ public class AdicionaTurmasActivity extends AppCompatActivity {
             }
         }else{
 
-            if(descricaoTurma == null){
+            if(descricaoTurma.equals("")){
                 return "É necessário definir um nome para a turma!";
             }
 

@@ -16,7 +16,8 @@ public class SplashScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash_screen);
+//        setContentView(R.layout.activity_splash_screen);
+        setContentView(R.layout.lista_turmas);
 
 //        Configurando o que será exibido na tela
 //        TextView frase = findViewById(R.id.teste);

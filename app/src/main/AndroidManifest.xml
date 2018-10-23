@@ -16,7 +16,7 @@
             android:name=".Main.MainActivity"
             android:label="@string/place_name" />
         <activity
-            android:name=".Main.SplashScreen"
+            android:name=".Administrador.Supervisor.GerenciaTurmasActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,8 +31,9 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity android:name=".Administrador.GerenciaCrismandosActivity" />
-        <activity android:name=".Administrador.Supervisor.GerenciaTurmasActivity" />
-        <activity android:name=".Administrador.Supervisor.AdicionaTurmasActivity"></activity>
+        <!--<activity android:name=".Administrador.Supervisor.GerenciaTurmasActivity" />-->
+        <activity android:name=".Administrador.Supervisor.AdicionaTurmasActivity" />
+        <activity android:name=".Administrador.AdicionarCrismandosActivity"></activity>
     </application>
 
 </manifest>

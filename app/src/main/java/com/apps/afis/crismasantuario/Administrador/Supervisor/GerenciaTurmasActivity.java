@@ -14,6 +14,5 @@ public class GerenciaTurmasActivity extends AppCompatActivity {
         setContentView(R.layout.activity_gerencia_turmas);
 
 
-        QrTurmas.selectTurma();
     }
 }

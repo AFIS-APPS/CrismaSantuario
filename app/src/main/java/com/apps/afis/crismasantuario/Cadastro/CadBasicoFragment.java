@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 
 import com.apps.afis.crismasantuario.R;
+import com.github.rtoshiro.util.format.SimpleMaskFormatter;
+import com.github.rtoshiro.util.format.text.MaskTextWatcher;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -64,6 +66,16 @@ public class CadBasicoFragment extends Fragment {
         endereco = view.findViewById(R.id.enderecoCatequista);
         cep = view.findViewById(R.id.cepCatequista);
         telefone = view.findViewById(R.id.telefoneCatequista);
+
+        SimpleMaskFormatter telefoneMask = new SimpleMaskFormatter("(NN) NNNNN-NNNN");
+        SimpleMaskFormatter cepMask = new SimpleMaskFormatter("NNNNN-NNN");
+
+        MaskTextWatcher telefoneWatcher = new MaskTextWatcher(telefone, telefoneMask);
+        MaskTextWatcher cepWatcher = new MaskTextWatcher(cep, cepMask);
+
+        telefone.addTextChangedListener(telefoneWatcher);
+        cep.addTextChangedListener(cepWatcher);
+
 
         return view;
     }
