@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        startActivity(new Intent(this, AdicionaTurmasActivity.class));
+        //startActivity(new Intent(this, AdicionaTurmasActivity.class));
 
     }
 }
